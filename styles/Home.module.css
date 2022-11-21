@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+.brd {
+  border-radius: 24px;
+  border: 2px solid;
+  text-align: center;
+  padding: 12px;
+  border-image: linear-gradient(to right, #ffe62e, #fc00e3, #f67600, #00ff19) 4;
+  /* 
+  border-image-slice: 1; */
+}
+
+.cardbrd {
+  border-image: linear-gradient(to right, #d036ff, #ff44e1, #ff932f) 3;
+}
+
+/* *  Tailwind css for card div h-3/6 w-3/6 bg-cardback backdrop-blur-[200px] p-2 flex flex-col space-y-1 rounded-3xl */
+.card {
+  overflow: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 50%;
+  padding: 8px;
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.20rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+  border-radius: 24px;
+  background: rgba(134, 134, 134, 0.4);
+  backdrop-filter: blur(200px);
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 230ms ease-in-out;
+}
+.checkoutbtn {
+  width: 70%;
+  justify-items: center;
+  letter-spacing: 3px;
+  font-family: "Jura";
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 63px;
+  border-radius: 12px;
+  font-size: 30px;
+  height: 48px;
+  color: white;
+  font-weight: 400;
+  background: linear-gradient(
+    91.98deg,
+    #d036ff 15.29%,
+    #ff44e1 54.57%,
+    #ff932f 100%
+  );
+}
+
+.checkoutbtn:hover {
+  color: black;
+}
+
+.checkout {
+  position: absolute;
+  height: 450px;
+  width: 600px;
+  border-radius: 25px;
+  /* background: radial-gradient(circle, #092e2d 0%,  #002420 100%); */
+  background-color: #00ff19;
+  margin-top: 80px;
+}
+
+.checkout_card {
+  justify-self: center;
+  position: relative;
+  padding: 15px;
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 500px;
+  height: 230px;
+  background: #001312;
+  border-radius: 20px;
+}
+
+.checkbtn {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 60px;
+  height: 60px;
+  width: 480px;
+  background: linear-gradient(
+    90deg,
+    #ff7a00 4.69%,
+    #65acff 54.17%,
+    #ff0099 100%
+  );
+  border-radius: 15px;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.ovCard {
+  background: #00000080;
+  font-family: 'Inter', sans-serif;
+}
+
+.ovCard,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+.mainOvCard {
+  min-height: 90%;
+  height: auto;
+  width: 450px;
+  background: #050f0f;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 20px;
+
+}
+
+.nft_details {
+  background: #d9d9d91a;
+  justify-self: center;
+  position: relative;
+  padding: 15px;
+  margin: 10px 0 0 20px;
+  width: 410px;
+  height: 160px;
+  border-radius: 20px;
+}
+.nft_tra_details {
+  background: #d9d9d91a;
+  justify-self: center;
+  position: relative;
+  padding: 15px;
+  margin: 10px 0 0 20px;
+  width: 410px;
+  height: 190px;
+  border-radius: 20px;
+}
+
+.buybtn {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 30px;
+  height: 60px;
+  width: 400px;
+  background: linear-gradient(90deg, #FD993C 4.69%, #5AA6FF 54.17%, #FF34AE 100%);
+  border-radius: 15px;
+  font-weight: 300;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.buybtn:hover{
+
+  text-decoration:underline;
+}
+
+.nft_inCard{
+  background: rgba(217, 217, 217, 0.1);
+  justify-self: center;
+  position: relative;
+  padding: 15px;
+  margin: 10px 0 0 20px;
+  width: 410px;
+  /* height: 70px; */
+  border-radius: 20px;
+}
+
+.startBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 30px;
+  height: 60px;
+  width: 400px;
+  background: linear-gradient(90deg, #FD993C 4.69%, #5AA6FF 54.17%, #FF34AE 100%);
+  border-radius: 15px;
+  font-weight: 200;
+  font-size: 20px;
+  font-weight: bold;
+}
+
