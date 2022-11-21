@@ -5,7 +5,8 @@ The Solarzu Dapp enables users to connect with the platform and buy their chosen
 * Solarzu allows users to make a downpayment and place a bid for their NFT on Opensea testnet
 * Polygon chain helps users to buy NFTs using Matic which makes the transactions cheaper and faster
 
-##### [Live link](https://solarzu-moralis-hackathon.vercel.app/)  
+
+Click Here :- ##### [Live link](https://solarzu-v2.vercel.app/)  
 
 ## How we built it
 We built Solarzu using Next and Tailwind CSS for frontend
