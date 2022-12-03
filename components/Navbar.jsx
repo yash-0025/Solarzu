@@ -1,5 +1,5 @@
 import React, { useState } from "react"
- import { Transition } from "@headlessui/react"
+import { Transition } from "@headlessui/react"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
@@ -7,7 +7,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const router = useRouter()
 
-  
   return (
     <div className="bg-[#0f0f0f] p-3 ">
       <nav className="flex justify-between">
@@ -18,19 +17,19 @@ const Navbar = () => {
             className="h-10 w-10 rounded-full my-auto"
           />
           <Link href="/">
-            <a  className="text-2xl font-bold my-auto tracking-widest">
+            <a className="text-2xl font-bold my-auto tracking-widest">
               SOLARZU
             </a>
           </Link>
         </div>
         <div className="hidden md:block text-white ">
           <div className="ml-10 flex items-baseline space-x-4  ">
-            <Link href="https://siddhantsidjlama.gitbook.io/solarzu/" >
+            <Link href="https://siddhantsidjlama.gitbook.io/solarzu/">
               <a className="transition duration-300 cursor-pointer px-3 py-2 text-md scroll-smooth  md:hover:text-[#FF005C] border-2 rounded-xl hover:border-amber-500">
                 Documentation
               </a>
             </Link>
-            <Link href="/checkout" >
+            <Link href="/checkout">
               <a className="transition duration-300 cursor-pointer px-3 py-2 text-md  md:hover:text-[#FF005C] border-2 rounded-xl hover:border-amber-500">
                 Checkout
               </a>
@@ -38,6 +37,12 @@ const Navbar = () => {
             <Link href="/repayment">
               <a className="transition duration-300 cursor-pointer px-3 py-2 text-md   md:hover:text-[#FF005C] border-2 rounded-xl hover:border-amber-500">
                 Repayment
+              </a>
+            </Link>
+
+            <Link href="/profile">
+              <a href="" className="self-center cursor-pointer">
+                <img src="avatar.png" alt="profile" />
               </a>
             </Link>
           </div>
@@ -101,6 +106,12 @@ const Navbar = () => {
                 ref={ref}
                 className=" px-2 pt-2 pb-3 space-y-1  border rounded-2xl text-white"
               >
+                <Link href="/profile">
+                  <a className="cursor-pointer flex  hover:bg-[#FFB800] space-x-2 hover:text-black block px-3 py-2 rounded-md text-base font-medium">
+                    <img src="avatar.png" alt="profile" className="h-5 mt-1" />{" "}
+                    <p className="mt-1">Profile</p>
+                  </a>
+                </Link>
                 <Link href="https://siddhantsidjlama.gitbook.io/solarzu/">
                   <a className="cursor-pointer hover:bg-[#FFB800] hover:text-black block px-3 py-2 rounded-md text-base font-medium">
                     Documentation
