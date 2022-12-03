@@ -49,7 +49,7 @@ const Profile = () => {
           </div>
           <div className=" md:w-3/5 bg-[#4F4F4F] bg-opacity-40 my-5 mx-5 rounded-md text-white h-fit ">
             <h1 className="text-center text-2xl p-2 font-semibold tracking-wider  mt-2">
-              NFT's
+              NFTs
             </h1>
             <div className="nftHoldings md:flex md:flex-wrap md:self-center md:mx-auto md:justify-center">
               <ProfileNFTCard nftName="The Hands" />
